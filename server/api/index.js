@@ -2,6 +2,21 @@
 
 const router = require('express').Router()
 
+//const db = require('./database')
+
+const candies = require('./candies')
+
+router.use('/candies', candies);
+
+// router.get('/candies', async (req, res, next) => {
+//   try {
+//    const candies = await Candy.findAll()
+//     res.status(200).send(candies);
+//   } catch (error){
+//     next(error)
+//   }
+// })
+
 // Your routes go here!
 // NOTE: Any routes that you put here are ALREADY mounted on `/api`
 // You can put all routes in this file HOWEVER,
